@@ -33,7 +33,7 @@ import React, { useEffect, useState } from 'react';
         <p className='text-heading2-bold'>Məhsullar</p>
         <Button onClick={()=>router.push('/products/new')} className='bg-blue-1 text-white'>
           <Plus className='h-4 w-4 mr-2'/>
-           Məhsul əlavə et
+           Əlavə et
         </Button>
      </div>
       <Separator className='bg-grey-1 my-4'/>

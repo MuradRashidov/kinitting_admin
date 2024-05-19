@@ -43,7 +43,7 @@ const Collections = () => {
         <p className='text-heading2-bold'>Kolleksiyalar</p>
         <Button onClick={()=>router.push('/collections/new')} className='bg-blue-1 text-white'>
           <Plus className='h-4 w-4 mr-2'/>
-           Yeni kolleksiya yarat
+           Yeni
         </Button>
      </div>
       <Separator className='bg-grey-1 my-4'/>
