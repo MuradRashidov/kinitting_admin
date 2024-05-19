@@ -76,7 +76,7 @@ export const GET = async (req:NextRequest) => {
         }
       }
       await connectDB();
-      const products = await Product.find(searchQuery?filter:{}).sort({createdAt:"desc"}).populate({path:'collections',model:Collection})
+      const products = await Product.find(searchQuery?filter:null).sort({createdAt:"desc"}).populate({path:'collections',model:Collection})
       return NextResponse.json(products,{
         status:200,
         headers: {
