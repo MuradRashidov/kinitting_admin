@@ -10,26 +10,26 @@ import {
     {
       url: "/",
       icon: <LayoutDashboard />,
-      label: "Dashboard",
+      label: "Admin",
     },
     {
       url: "/collections",
       icon: <Shapes />,
-      label: "Collections",
+      label: "Kolleksiyalar",
     },
     {
       url: "/products",
       icon: <Tag />,
-      label: "Products",
+      label: "Məhsullar",
     },
     {
       url: "/orders",
       icon: <ShoppingBag />,
-      label: "Orders",
+      label: "Sifarişlər",
     },
     {
       url: "/customers",
       icon: <UsersRound />,
-      label: "Customers",
+      label: "Müştərilər",
     },
   ];

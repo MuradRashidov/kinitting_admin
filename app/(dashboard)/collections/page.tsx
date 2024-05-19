@@ -40,10 +40,10 @@ const Collections = () => {
   return (
     <div className='px-10 py-5'>
      <div className='flex justify-between items-center'>
-        <p className='text-heading2-bold'>Collections</p>
+        <p className='text-heading2-bold'>Kolleksiyalar</p>
         <Button onClick={()=>router.push('/collections/new')} className='bg-blue-1 text-white'>
           <Plus className='h-4 w-4 mr-2'/>
-           Create Collection
+           Yeni kolleksiya yarat
         </Button>
      </div>
       <Separator className='bg-grey-1 my-4'/>

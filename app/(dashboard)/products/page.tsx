@@ -30,10 +30,10 @@ import React, { useEffect, useState } from 'react';
     {loading && <Loader/>}
     <div className='px-10 py-5'>
      <div className='flex justify-between items-center'>
-        <p className='text-heading2-bold'>Products</p>
+        <p className='text-heading2-bold'>Məhsullar</p>
         <Button onClick={()=>router.push('/products/new')} className='bg-blue-1 text-white'>
           <Plus className='h-4 w-4 mr-2'/>
-           Create Product
+           Məhsul əlavə et
         </Button>
      </div>
       <Separator className='bg-grey-1 my-4'/>

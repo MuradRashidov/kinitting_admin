@@ -8,9 +8,9 @@ const OrderDetails = async({params}:{params:{orderId:string}}) => {
   return (
     <div className="flex flex-col p-10 gap-5">
         <p className="text-base-bold">Order ID: <span className="text-base-medium">{orderDetails._id}</span></p>
-        <p className="text-base-bold">Customer Name: <span className="text-base-medium">{customer.name}</span></p>
-        <p className="text-base-bold">Shipping Address: <span className="text-base-medium">{street}, {city},{state},{postalCode},{country}</span></p>
-        <p className="text-base-bold">Total Paid: <span className="text-base-medium">{orderDetails.totalAmount}</span></p>
+        <p className="text-base-bold">Müştəri adı : <span className="text-base-medium">{customer.name}</span></p>
+        <p className="text-base-bold">Çatdırılma adresi: <span className="text-base-medium">{street}, {city},{state},{postalCode},{country}</span></p>
+        <p className="text-base-bold">Yekun ödəniş: <span className="text-base-medium">{orderDetails.totalAmount} AZN</span></p>
         <p className="text-base-bold">Shipping Rate ID: <span className="text-base-medium">{orderDetails.shippingRate}</span></p>
         <DataTable columns={columns} data={orderDetails.products} searchKey="product"/>
     </div>

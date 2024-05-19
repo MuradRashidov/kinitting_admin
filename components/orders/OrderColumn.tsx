@@ -5,23 +5,23 @@ import Link from 'next/link';
 export const columns: ColumnDef<OrderColumnType>[] = [
   {
     accessorKey: "_id",
-    header: "Order",
+    header: "Sifariş ID",
     cell:({row}) => <Link className='hover:text-red-1' href={`/orders/${row.original._id}`}><p>{row.original._id}</p></Link>
   },
   {
     accessorKey: "customer",
-    header: "Customer",
+    header: "Müştəri",
   },
   {
     accessorKey: "products",
-    header: "Products",
+    header: "Mıhsullar",
   },
   {
     accessorKey: "totalAmount",
-    header: "Total Amount",
+    header: "Yekun Məbləğ",
   },
   {
     accessorKey: "createdAt",
-    header: "Create At",
+    header: "Sifariş saatı",
   },
 ]

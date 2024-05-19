@@ -6,21 +6,21 @@ import Link from 'next/link';
 export const columns: ColumnDef<ProductType>[] = [
   {
     accessorKey: "title",
-    header: "Title",
+    header: "Məhsul adı",
     cell:({row}) => <Link className='hover:text-red-1' href={`/products/${row.original._id}`}><p>{row.original.title}</p></Link>
   },
   {
     accessorKey: "category",
-    header: "Category",
+    header: "Kateqoriya",
   },
   {
     accessorKey: "collections",
-    header: "Collections",
+    header: "Kolleksitalar",
     cell:({row}) => row.original.collections.map((collection)=>collection.title).join(',')
   },
   {
     accessorKey: "price",
-    header: "Price AZN()",
+    header: "Qiymət AZN()",
   },
   {
     accessorKey: "expense",
