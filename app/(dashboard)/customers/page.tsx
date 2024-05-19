@@ -2,9 +2,11 @@ import { DataTable } from '@/components/custom ui/DataTable';
 import { columns } from '@/components/customers/CustomerColumns';
 import { Separator } from '@/components/ui/separator';
 import Customer from '@/lib/models/customer'
+import { connectDB } from '@/lib/mongoDB';
 import React from 'react'
 
 const Customers = async() => {
+  await connectDB()
   const customers = await Customer.find().sort({createdAt:"desc"});
   
   return customers && customers.length>0? (
