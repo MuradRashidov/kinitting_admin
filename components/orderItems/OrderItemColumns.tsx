@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const columns: ColumnDef<OrderItemType>[] = [
   {
     accessorKey: "product",
-    header: "M'hsul",
+    header: "Məhsul",
     cell:({row}) => <Link className='hover:text-red-1' href={`/products/${row.original.product._id}`}><p>{row.original.product.title}</p></Link>
   },
   {
