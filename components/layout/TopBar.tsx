@@ -13,8 +13,8 @@ const TopBar = () => {
   return (
     <div className='sticky top-0 w-full flex justify-between bg-blue-2 items-center px-8 py-4 shadow-xl z-20 lg:hidden'>
         {/* <Image className='rounded-md' src='/logo.png' alt='logo' width={130} height={50}/> */}
-        <p className="border p-2 rounded">knitty<span className="text-base-bold text-red-1">NG</span></p>
-        <div className='flex gap-8 max-md:hidden'>
+            <p className="border p-2 rounded">knitty<span className="text-base-bold text-red-1">NG</span></p>
+             <div className='flex gap-8 max-md:hidden'>
             {
               navLinks.map((link,index)=>(
                 <Link className={`flex gap-4 text-body-medium ${pathname===link.url?"text-blue-1":"text-grey-1"}`} href={link.url} key={link.label}>
